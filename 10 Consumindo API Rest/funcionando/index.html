@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Exemplo - Consumindo API REST</title>
+        <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Exemplo Consumindo uma API REST</h1>
+            <p>
+                O objetivo desse exemplo é consumir os dados provenientes de uma
+                API REST e exibir esses dados em uma página com HTML dinâmico 
+                gerado a partir do JavaScript.
+            </p>
+            <hr>
+
+            <h3>Dados da API</h3>
+            <p>
+                <button id="btnObterDados" type="button" onclick="carregarDados();">
+                    Obter Dados
+                </button>
+            </p>
+            <div id="div-erro">...</div>
+            <div id="dados">
+                <table id="tabela-dados">
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Moeda</th>
+                        </tr>
+                    </thead>
+                    <tbody id="linhas">
+                       
+                    </tbody>
+                </table>
+
+            </div>        
+        </div>        
+    </body>
+
+    <script src="js/coinbase.js"></script>
+</html>
